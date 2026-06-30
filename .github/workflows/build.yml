@@ -21,6 +21,10 @@ jobs:
         distribution: 'temurin'
         cache: gradle
 
+    # 💡 လိုအပ်နေတဲ့ gradlew ဖိုင်ကို စက်ပေါ်တွင် အလိုအလျောက် ဆောက်ခိုင်းခြင်း
+    - name: Generate Gradle Wrapper
+      run: gradle wrapper
+
     - name: Change Wrapper Permissions
       run: chmod +x gradlew
 
